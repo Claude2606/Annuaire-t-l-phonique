@@ -1,0 +1,500 @@
+/* Global */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --clr-white: #FFFFFF;
+    --clr-black: #151515;
+}
+
+h1 {
+    font-size: 72px;
+    color: var(--clr-white);
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.8);
+}
+
+
+/* HEADER */
+/* Suppression puce et déco-text de la nav */
+.header_container .nav nav ul li a, p {
+    text-decoration: none;
+    color: var(--clr-white);
+
+}
+
+.header_container .nav nav ul li {
+    list-style: none;
+}
+/* Fin */
+
+/* Alignement text-symboles */
+.header_container .nav nav ul li  {
+    text-align: center ;
+    height:80px;
+}
+
+.header_container .nav nav ul li a i {
+    padding-bottom: 5px;
+}
+/* Fin */
+.header_container .nav nav ul li a:hover {
+    color: #FFCF40;
+}
+
+/* Mise en page headers */
+.header_accueil,
+.header_profil,
+.header_addcontact,
+.header_modifpassword,
+.header_modifprofil,
+.header_vuecontact {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-black);
+}
+
+.header_accueil .header_container,
+.header_profil .header_container,
+.header_addcontact .header_container,
+.header_modifpassword .header_container,
+.header_modifprofil .header_container,
+.header_vuecontact .header_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_container .nav nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.header_accueil .header_container .nav nav ul p,
+.header_profil .header_container .nav nav ul p,
+.header_addcontact .header_container .nav nav ul p  {
+    font-size: 40px;
+}
+
+.header_accueil .header_container .deco form input[type=submit], 
+.header_profil .header_container .deco form input[type=submit],
+.header_addcontact .header_container .deco form input[type=submit],
+.header_modifpassword .header_container .deco form input[type=submit],
+.header_modifprofil .header_container .deco form input[type=submit],
+.header_vuecontact .header_container .deco form input[type=submit] {
+    font-size: 20px;
+    background-color: #FFCF40;
+    padding: 10px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    color: var(--clr-black);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    transition: all 0.4s;
+}
+
+.header_accueil .header_container .deco form input[type=submit]:hover, 
+.header_profil .header_container .deco form input[type=submit]:hover,
+.header_addcontact .header_container .deco form input[type=submit]:hover,
+.header_modifpassword .header_container .deco form input[type=submit]:hover,
+.header_modifprofil .header_container .deco form input[type=submit]:hover,
+.header_vuecontact .header_container .deco form input[type=submit]:hover {
+    box-shadow: 10px 3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 3px 5px 0px rgba(0,0,0,0.75);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+/* Header Responsive */
+/* 3 icons */
+@media screen and (max-width:770px) {
+    .header_profil,
+    .header_addcontact,
+    .header_modifpassword,
+    .header_modifprofil,
+    .header_vuecontact {
+        height: 500px;
+        flex-direction: column;
+}
+
+    .header_profil .header_container,
+    .header_addcontact .header_container,
+    .header_modifpassword .header_container,
+    .header_modifprofil .header_container,
+    .header_vuecontact .header_container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header_profil .header_container .nav nav ul,
+    .header_addcontact .header_container .nav nav ul,
+    .header_modifpassword .header_container .nav nav ul,
+    .header_modifprofil .header_container .nav nav ul,
+    .header_vuecontact .header_container .nav nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .header_profil .header_container .nav nav ul p,
+    .header_addcontact .header_container .nav nav ul p,
+    .header_modifpassword .header_container .nav nav ul p,
+    .header_modifprofil .header_container .nav nav ul p,
+    .header_vuecontact .header_container .nav nav ul p {
+        color: var(--clr-white);
+        transform: rotate(90deg);
+    
+    }
+}
+
+/* 2 icons */
+@media screen and (max-width:500px) {
+    .header_accueil {
+        height: 360px;
+        flex-direction: column;
+}
+
+    .header_accueil .header_container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .header_container .nav nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .header_container .nav nav ul p {
+        color: var(--clr-white);
+        transform: rotate(90deg);
+    
+    }
+}
+
+
+/* Page de connexion */
+/* Page d'inscription */
+/* Page de modification de mot de passe */
+.section_connexion,
+.section_inscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.container_form_connexion form,
+.container_form_modifpassword form,
+/* Formulaire de modification de profil */
+.container_form_modifprofil form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.container_form_connexion form span,
+.container_form_modifpassword form span,
+/* Formulaire de modification de profil */
+.container_form_modifprofil form span {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    color: var(--clr-white);
+    text-shadow: 2px 1px 1px rgba(0,0,0,0.8);
+}
+
+/* Input password formulaire de connexion */
+.container_form_connexion form .password_input {
+    display: flex;
+    flex-direction: column;
+}
+.container_form_connexion form .password_input a {
+    margin: 8px 0px 50px 0px;
+    transition: all 0.4s;
+}
+.container_form_connexion form .password_input a:hover {
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+}
+/* Fin */
+
+.container_form_connexion form a,
+.container_form_inscription form a,
+.container_form_modifprofil form a,
+.profil_container a {
+    font-size: 20px;
+    margin: 5px;
+    text-decoration: underline;
+    text-shadow: 2px 1px 1px rgba(0,0,0,0.8);
+}
+
+.container_form_connexion form p {
+    text-shadow: 2px 1px 1px rgba(0,0,0,0.8);
+}
+
+.container_form_connexion form a:hover,
+.container_form_inscription form a:hover,
+.container_form_modifprofil form a:hover {
+    text-decoration: none;
+}
+
+.container_form_modifprofil form a {
+    color: var(--clr-white);
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+.container_form_modifprofil form a:hover {
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+.container_form_connexion form input[type=text] {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.container_form_connexion form input[type=submit],
+.container_form_inscription form input[type=submit] {
+    font-size: 24px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.container_form_connexion form input[type=password] {
+    font-size: 24px;
+}
+
+/* Spécifique Inscription */
+.container_form_inscription form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.container_form_inscription form span,
+.container_form_addcontact form span {
+    font-size: 26px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+    color: var(--clr-white);
+    text-shadow: 2px 1px 1px rgba(0,0,0,0.8);
+}
+
+/* Formulairre Ajout contact */
+.container_form_addcontact form .titre_genre {
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+.container_form_addcontact form label {
+    font-size: 22px;
+    padding: 10px;
+    color: var(--clr-white);
+}
+
+.container_form_addcontact form input[type=submit] {
+    font-size: 24px;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.container_form_inscription form input[type=text],
+.container_form_inscription form input[type=date],
+.container_form_inscription form input[type=password],
+.container_form_addcontact form input[type=text] {
+    font-size: 22px;
+    margin-bottom: 34px;
+}
+
+
+/* Spécifique Modification Mot de passe */
+.section_modifpassword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.container_form_modifpassword form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_form_modifpassword form span, a,
+.container_form_modifprofil form a {
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    color: var(--clr-white);
+    text-shadow: 2px 1px 1px rgba(0,0,0,0.8);
+    transition: all 0.4s;
+}
+
+.container_form_modifpassword form a:hover,
+.container_form_modifprofil form a:hover {
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.8);
+}
+
+
+.container_form_modifpassword form input[type=password] {
+    font-size: 24px;
+    margin-bottom: 73px;
+}
+
+.container_form_modifpassword form input[type=submit],
+.container_form_modifprofil form input[type=submit]   {
+    font-size: 24px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+
+/* Page de modification de mot de pase en etant connecté */
+.section_modifpassword_connecte,
+/* Formulaire de modification de profil */
+.section_modif_profil,
+/* Formulaire d'ajout de contact */
+.section_addcontact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+}
+
+.container_form_modifprofil form,
+.container_form_addcontact form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+.container_form_modifprofil form input[type=text],
+.container_form_modifprofil form input[type=date] {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Background Section */
+
+.section_accueil {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.section_accueil .titre_accueil {
+    font-size: 80px;
+    padding: 250px 0px 0px 250px;
+}
+
+.section_connexion,
+.section_inscription,
+.section_modifpassword,
+.section_accueil,
+.section_modif_profil,
+.section_addcontact, 
+.section_modifpassword_connecte,
+.section_profil {
+    background: url(../assets/background\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.section_connexion img,
+.section_inscription img,
+.section_modifpassword img,
+.section_accueil img,
+.section_modif_profil img,
+.section_addcontact img, 
+.section_modifpassword_connecte img,
+.section_profil img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Section Accueil */
+/* Responsive h1 */
+
+@media screen and (max-width:580px) {
+    .section_accueil {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .section_accueil .titre_accueil {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .section_accueil .titre_accueil {
+        font-size: 50px;
+    }
+}
+
+/* Section Profil */
+.section_profil {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+    padding-top: 50px;
+}
+
+.section_profil .profil_container .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 30px;
+    padding-bottom: 80px;
+    text-shadow: 2px 1px 1px rgba(0,0,0,0.8);
+}
+
+.section_profil .profil_container .infos span {
+    text-decoration: underline;
+}
+
+.profil_container a {
+    display: flex;
+    justify-content: center;
+}
+
+.profil_container a {
+    font-size: 24px;
+    margin: 5px;
+    text-decoration: underline;
+    text-shadow: 2px 1px 1px rgba(0,0,0,0.8);
+}
+
+.profil_container a:hover {
+    text-decoration: none;
+}
