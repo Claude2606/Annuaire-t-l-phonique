@@ -1,6 +1,5 @@
 <?php
 session_start();
-$titre = "Inscription";
 ?>
 <!DOCTYPE html>
 <html lang="en">

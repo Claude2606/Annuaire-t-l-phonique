@@ -55,20 +55,21 @@
 </head>
 <body>
 <header>
-    <h1>Page Admin</h1>
+    <h1>Admin</h1>
     <div class="header_container">
         <div class="deco">
             <form action="pdeco.php" method="POST">
                 <input type="submit" name="bConnexion" Value="Deconnexion">
             </form>
         </div>
-
-        <div class="nav">
-
-                    
-        </div>
     </div>
 </header>
+
+<section>
+    <a href="padduser.php">Ajouter un utilisateur</a><br><br>
+    <a href="">Modifier un utilisateur</a><br><br>
+    <a href="pdeleteuser.php">Supprimer un utilisateur</a>
+</section>
 
 </body>
 <?php
