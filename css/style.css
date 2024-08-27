@@ -446,21 +446,6 @@ h1 {
     height: 100%;
 }
 
-/* Responsive Background */
-@media screen and (max-width:900px) {
-    .section_connexion,
-    .section_inscription,
-    .section_modifpassword,
-    .section_accueil,
-    .section_modif_profil,
-    .section_addcontact, 
-    .section_modifpassword_connecte,
-    .section_profil,
-    .vue_contact {
-        background-position: center;
-        background-size: none;
-    }
-}
 
 /* Section Accueil */
 /* Responsive h1 */
