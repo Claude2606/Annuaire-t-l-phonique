@@ -2,3 +2,9 @@ Lien vers le Trello : https://trello.com/invite/b/66ae4d5a5e90ed998fa92efb/ATTI6
 
 Accès Utilisateurs : username: xydemudely | password: 123456789
 		                 username: pablito | password: 0000000000
+
+CSV Base de données : 
+"users_id","nom","prenom","username","date_n","role","password","contact_id"
+"1","illiana ellison","Aileen","xydemudely","2024-02-20","0","$2y$10$xYhbU2T2ER.bx6U0CcOfreFCeHH9mWfV/QLM/y2vSkBHJWxarEuim",NULL
+"4","El","Machalux","pablito","2024-04-11","0","$2y$10$gvliKkPoNhrJnfmpL80rj.vHiu6WATBDy9sfbkpYVBovAm6Yyaka.",NULL
+
