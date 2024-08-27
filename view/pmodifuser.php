@@ -1,6 +1,9 @@
 <?php
 require("../model/pmodel.php");
-$vueuser = voiruser($user_id);
+if(isset($_SESSION['user'])) {
+    $user_id = $_SESSION['user_id'];
+    $vueuser = voiruser($user_id);
+}
 ?>
 
 <div>
@@ -9,7 +12,8 @@ $vueuser = voiruser($user_id);
         <p><span>User 1 :</span>&nbsp;<?php echo htmlspecialchars($vueuser[0]['username']) ?? 'Infos indisponible'; ?></p>
         <p><span>User 2 :</span>&nbsp;<?php echo htmlspecialchars($vueuser[1]['username']) ?? 'Infos indisponible'; ?></p>
     <?php else: ?>
-        <p>Les informations des utilisateurs ne sont pas disponibles.</p>
+        <br>
+        <p>Les informations des utilisateurs ne sont pas disponibles.</p><br>
     <?php endif; ?>
 
     <a href="paccueil.php">Retour</a>
