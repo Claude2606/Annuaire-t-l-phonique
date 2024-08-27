@@ -1,3 +1,4 @@
+
 <form action="../controlleur/pcontrolleur.php" method="POST">
             <span>Nom</span>
             <input type="text" name="name" size="20" placeholder="Nom" required autofocus><br><br>
@@ -20,4 +21,4 @@
             <input type="submit" name="binscription" value="Ajouter un utilisateur"><br><br>
 
             <a href="paccueil.php">Retour</a>
-        </form>
+</form>

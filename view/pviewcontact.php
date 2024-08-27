@@ -4,20 +4,6 @@ session_start();
 if(isset($_SESSION['user'])) {
     $contacts_id = $_SESSION['user_id'];
     $infos_contact = recupinfo_contact($contacts_id);
-    var_dump($infos_contact);
-
-
-
-
-    // [
-    //     [
-    //         'nom_contact' => 'Dupont',
-    //         'prenom_contact' => 'Jean',
-    //         'numero_contact' => '0123456789',
-    //         'adresse_contact' => '123 Rue de Paris',
-    //         'sexe_contact' => 'Masculin'
-    //     ]
-    // ];
 }
 ?>
     <!DOCTYPE html> 
@@ -72,5 +58,9 @@ if(isset($_SESSION['user'])) {
                 </div>
             </div>
         </Section>
+
+        <footer class="footer">
+            <p>Copyright &copy; Claude Peltier 2024</p>
+        </footer>
 
     </body>

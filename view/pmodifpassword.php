@@ -54,6 +54,10 @@ session_start();
             </form>
         </div>
     </section>
+
+    <footer class="footer">
+        <p>Copyright &copy; Claude Peltier 2024</p>
+    </footer>
         <?php
     } else { ?>
         <section class="section_modifpassword">

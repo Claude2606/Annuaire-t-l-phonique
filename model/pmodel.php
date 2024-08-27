@@ -136,4 +136,15 @@ function create_contact($contact_name, $contact_firstname, $contact_num, $contac
     }
 }
 
+
+function voiruser($user_id) {
+    global $bdd;
+    $sqluser = "SELECT * FROM users WHERE users_id = :user_id";
+    $stmt = $bdd->prepare($sqluser);
+    $stmt->bindParam(":user_id",$user_id);
+    $stmt->execute();
+
+    // On récupére les résultats sous forme de tableau associatif
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
 ?>

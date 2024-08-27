@@ -43,6 +43,10 @@
         <h1 class="titre_accueil">Restez en Contact !</h1>
 </Section>
 
+<footer class="footer">
+    <p>Copyright &copy; Claude Peltier 2024</p>
+</footer>
+
 <?php
 } else {
 ?>
@@ -67,7 +71,7 @@
 
 <section>
     <a href="padduser.php">Ajouter un utilisateur</a><br><br>
-    <a href="">Modifier un utilisateur</a><br><br>
+    <a href="pmodifuser.php">Modifier un utilisateur</a><br><br>
     <a href="pdeleteuser.php">Supprimer un utilisateur</a>
 </section>
 

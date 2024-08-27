@@ -58,6 +58,7 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: var(--clr-black);
+    border-bottom: #303030 2px solid;
 }
 
 .header_accueil .header_container,
@@ -353,7 +354,7 @@ h1 {
 
 .container_form_modifpassword form a:hover,
 .container_form_modifprofil form a:hover {
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.8);
+    text-decoration: none;
 }
 
 
@@ -413,6 +414,10 @@ h1 {
     padding: 250px 0px 0px 250px;
 }
 
+.vue_contact {
+    height: 100vh;
+}
+
 .section_connexion,
 .section_inscription,
 .section_modifpassword,
@@ -420,7 +425,8 @@ h1 {
 .section_modif_profil,
 .section_addcontact, 
 .section_modifpassword_connecte,
-.section_profil {
+.section_profil,
+.vue_contact {
     background: url(../assets/background\ 1.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -434,7 +440,8 @@ h1 {
 .section_modif_profil img,
 .section_addcontact img, 
 .section_modifpassword_connecte img,
-.section_profil img {
+.section_profil img,
+.vue_contact img {
     width: 100%;
     height: 100%;
 }
@@ -497,4 +504,30 @@ h1 {
 
 .profil_container a:hover {
     text-decoration: none;
+}
+
+/* Infocontact */
+
+.infos_contact p {
+    font-size: 26px;
+    padding: 250px 0px 0px 300px;
+    text-shadow: 2px 1px 1px rgba(0,0,0,0.8);
+}
+
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: var(--clr-black);
+    border-top: #050505 1px solid;
+}
+
+.footer p {
+    font-size: 20px;
+    color: #FFCF40;
 }

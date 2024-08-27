@@ -58,4 +58,8 @@ if(isset($_SESSION['user'])) {
         </div>
     </section>
 
+    <footer class="footer">
+        <p>Copyright &copy; Claude Peltier 2024</p>
+    </footer>
+
     </body>
